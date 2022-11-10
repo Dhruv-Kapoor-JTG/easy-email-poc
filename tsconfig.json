@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src"
+  ],
+  "paths": {
+    // "easy-email-editor": ["./node_modules/easy-email-editor/src/index.tsx"],
+    // "easy-email-core": ["./node_modules/easy-email-core/src/index.tsx"],
+    // "easy-email-extensions": ["./node_modules/easy-email-extensions/src/index.tsx"],
+    
+  }
+}

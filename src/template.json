@@ -1,0 +1,150 @@
+{
+  "type": "page",
+  "data": {
+    "value": {
+      "breakpoint": "",
+      "headAttributes": "",
+      "font-size": "14px",
+      "font-weight": "400",
+      "line-height": "1.7",
+      "headStyles": [],
+      "fonts": [],
+      "responsive": true,
+      "font-family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans','Helvetica Neue', sans-serif",
+      "text-color": "#000000"
+    }
+  },
+  "attributes": {
+    "background-color": "#efeeea",
+    "width": "620px",
+    "padding": "100px"
+  },
+  "children": [
+    {
+      "type": "advanced_image",
+      "data": {
+        "value": {},
+        "hidden": false
+      },
+      "attributes": {
+        "padding": "20px 0px 13px 0px",
+        "border": "none",
+        "direction": "ltr",
+        "text-align": "center",
+        "align": "center",
+        "height": "auto",
+        "src": "{{college_logo}}",
+        "width": "120px",
+        "container-background-color": "#f0f0f0"
+      },
+      "children": []
+    },
+    {
+      "type": "advanced_wrapper",
+      "data": {
+        "value": {}
+      },
+      "attributes": {
+        "padding": "20px 0px 20px 0px",
+        "border": "none",
+        "direction": "ltr",
+        "text-align": "center",
+        "background-color": "#5D21D1",
+        "border-radius": "10px 10px 0 0"
+      },
+      "children": [
+        {
+          "type": "advanced_text",
+          "data": {
+            "value": {
+              "content": "<div style=\"text-align: center;\"><span style=\"font-family: Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 700;\">Note for You!</span><br></div>"
+            }
+          },
+          "attributes": {
+            "padding": "0 25px 0 25px",
+            "align": "left",
+            "color": "#FFFFFF",
+            "container-background-color": ""
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "advanced_wrapper",
+      "data": {
+        "value": {}
+      },
+      "attributes": {
+        "padding": "30px 30px 30px 30px",
+        "border": "none",
+        "direction": "ltr",
+        "text-align": "center",
+        "border-radius": "0 0 10px 10px",
+        "background-color": "#FFFFFF"
+      },
+      "children": [
+        {
+          "type": "advanced_text",
+          "data": {
+            "value": {
+              "content": "<b>Subject</b>"
+            }
+          },
+          "attributes": {
+            "padding": "10px 0 10px 0",
+            "align": "left",
+            "font-family": "Arial, Helvetica, sans-serif",
+            "color": "#393937",
+            "font-size": "20px",
+            "line-height": "25px"
+          },
+          "children": []
+        },
+        {
+          "type": "advanced_text",
+          "data": {
+            "value": {
+              "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis feugiat libero. Cras elit enim, malesuada eget fringilla a, sollicitudin eu erat. Pellentesque faucibus dignissim tincidunt. Nulla eu lorem libero. In lectus nisl, gravida quis hendrerit ac, lacinia et leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed eget arcu ornare, ullamcorper diam at, cursus risus.<div><br></div><div>Proin in risus at sem ultricies fermentum. Praesent nec lectus nulla. Nulla nec lectus eleifend, tempus lacus vel, convallis nulla. Sed tempor lacus eu enim fringilla, vel finibus arcu mollis. Mauris enim metus, commodo quis iaculis eget, tincidunt vitae neque. Nullam vehicula porta libero et scelerisque. Quisque at ante venenatis, porta mauris id, venenatis leo. Nunc dictum nulla at turpis facilisis, eget ultrices orci egestas. Nulla diam arcu, fermentum sed neque vitae, porttitor ullamcorper neque. Proin condimentum, nisi eget efficitur porttitor, libero justo ullamcorper justo, efficitur elementum lectus sapien in neque. Proin non lorem euismod lectus congue semper.</div>"
+            }
+          },
+          "attributes": {
+            "padding": "0 0 0 0",
+            "align": "left",
+            "font-family": "Arial, Helvetica, sans-serif",
+            "font-size": "14px",
+            "color": "#393937",
+            "line-height": "20px"
+          },
+          "children": []
+        },
+        {
+          "type": "advanced_text",
+          "data": {
+            "value": {
+              "content": "Regards,<div>{{custom_signature_details.name}}<br><div>{{custom_signature_details.designation}}</div></div>"
+            }
+          },
+          "attributes": {
+            "padding": "10px 0 10px 0",
+            "align": "left",
+            "color": "#666666",
+            "font-family": "Arial, Helvetica, sans-serif",
+            "font-size": "13px",
+            "line-height": "17px",
+            "letter-spacing": "0.8"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "footer",
+      "data": {
+        "value": {}
+      },
+      "attributes": {},
+      "children": []
+    }
+  ]
+}
