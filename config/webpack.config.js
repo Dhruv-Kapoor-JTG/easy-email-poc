@@ -320,6 +320,7 @@ module.exports = function (webpackEnv) {
         }),
         ...(modules.webpackAliases || {}),
         // react: path.resolve('./node_modules/react'),
+        // 'react-final-form': path.resolve('./node_modules/react-final-form'),
         // 'easy-email-editor/lib/style.css': path.resolve('./node_modules/easy-email-editor/lib/style.css'),
         // 'easy-email-extensions/lib/style.css': path.resolve('./node_modules/easy-email-extensions/lib/style.css'),
         // '@extensions': path.resolve('./node_modules/easy-email-extensions/src'),

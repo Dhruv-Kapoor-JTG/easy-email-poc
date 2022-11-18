@@ -144,7 +144,8 @@
         "value": {}
       },
       "attributes": {},
-      "children": []
+      "children": [],
+      "disableBlockOptions": true
     }
   ]
 }

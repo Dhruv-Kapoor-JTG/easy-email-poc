@@ -10,12 +10,11 @@ import mjml from 'mjml-browser';
 import _ from 'lodash'
 import 'easy-email-editor/lib/style.css';
 import 'easy-email-extensions/lib/style.css';
+import template from './template.json'
 
 // theme, If you need to change the theme, you can make a duplicate in https://arco.design/themes/design/1799/setting/base/Color
 import '@arco-themes/react-easy-email-theme/css/arco.css';
 import { useBlock } from "easy-email-editor";
-import { Form } from 'react-final-form';
-
 // const { undo } = useBlock()
 
 const defaultCategories: ExtensionProps['categories'] = [
@@ -34,22 +33,63 @@ const defaultCategories: ExtensionProps['categories'] = [
         type: AdvancedType.BUTTON,
       },
       {
-        type: AdvancedType.SOCIAL,
-      },
-      {
         type: AdvancedType.DIVIDER,
       },
       {
         type: AdvancedType.SPACER,
       },
       {
-        type: AdvancedType.HERO,
-      },
-      {
         type: AdvancedType.WRAPPER,
       },
+      {
+        type: AdvancedType.ACCORDION
+      },
+      {
+        type: AdvancedType.CAROUSEL
+      },
+      {
+        type: AdvancedType.NAVBAR
+      },
+      {
+        type: AdvancedType.GROUP
+      },
+      {
+        type: AdvancedType.COLUMN
+      },
+      {
+        type: AdvancedType.SECTION
+      }
     ]
   },  
+  {
+    label: 'Layout',
+    active: false,
+    displayType: 'column',
+    blocks: [
+      {
+        title: '2 columns',
+        payload: [
+          ['50%', '50%'],
+          ['33%', '67%'],
+          ['67%', '33%'],
+          ['25%', '75%'],
+          ['75%', '25%'],
+        ],
+      },
+      {
+        title: '3 columns',
+        payload: [
+          ['33.33%', '33.33%', '33.33%'],
+          ['25%', '25%', '50%'],
+          ['50%', '25%', '25%'],
+        ],
+      },
+      {
+        title: '4 columns',
+        payload: [['25%', '25%', '25%', '25%']],
+      },
+    ],
+  },
   {
     label: 'Custom',
     active: true,
@@ -67,7 +107,7 @@ const defaultCategories: ExtensionProps['categories'] = [
 const initialValues = {
   subject: 'Welcome to Easy-email',
   subTitle: 'Nice to meet you!',
-  content: BlockManager.getBlockByType(BasicType.PAGE)!.create({}),
+  content: BlockManager.getBlockByType(BasicType.PAGE)!.create(template),
 };
 
 
@@ -123,17 +163,15 @@ export default function App() {
   }
 
   return (
-    // <Form onSubmit={()=>{}}>
-    //   {() => (
-
     <EmailEditorProvider
       data={initialValues}
-      height={'calc(100vh - 72px)'}
+      height={'calc(100vh - 32px)'}
       dashed={false}
       mergeTags={mergeTags}
       onBeforePreview={onBeforePreview}
-      // onRemoveCollection={onRemoveCollection}
-      // onUploadImage={onUploadImage}
+      onRemoveCollection={onRemoveCollection}
+      onUploadImage={onUploadImage}
+      disableBlockOptions={false}
     >
       {({ values }) => {
         return (
@@ -144,6 +182,8 @@ export default function App() {
               compact={true}
               showSourceCode={false}
               categories={defaultCategories}
+              // showEditPanel={false}
+              // showBlocksTab={true}
             >
               <EmailEditor/>
             </StandardLayout>
@@ -152,7 +192,5 @@ export default function App() {
       }}
       
     </EmailEditorProvider>
-    // )}
-    // </Form>
   );
 }
