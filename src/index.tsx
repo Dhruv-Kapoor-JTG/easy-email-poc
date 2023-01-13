@@ -2,8 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import App2 from './App2';
 import reportWebVitals from './reportWebVitals';
-
+import 'swiper/swiper.min.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // const root = ReactDOM.createRoot(
 //   document.getElementById('root') as HTMLElement
 // );
@@ -15,7 +17,12 @@ import reportWebVitals from './reportWebVitals';
 console.log(React.version)
 ReactDOM.render(
   // <React.StrictMode>
-    <App />,
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<App2/>}/>
+      <Route path='/easy-email' element={<App/>}/>
+    </Routes>
+  </BrowserRouter>,
   // </React.StrictMode>,
   document.getElementById('root')
 );

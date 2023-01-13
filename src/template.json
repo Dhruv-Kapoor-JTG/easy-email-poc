@@ -37,7 +37,9 @@
         "width": "120px",
         "container-background-color": "#f0f0f0"
       },
-      "children": []
+      "children": [],
+      "disableBlockOptions": true
+
     },
     {
       "type": "advanced_wrapper",
@@ -66,9 +68,13 @@
             "color": "#FFFFFF",
             "container-background-color": ""
           },
-          "children": []
+          "children": [],
+          "disableBlockOptions": true
+
         }
-      ]
+      ],
+      "disableBlockOptions": true
+
     },
     {
       "type": "advanced_wrapper",
@@ -116,7 +122,9 @@
             "color": "#393937",
             "line-height": "20px"
           },
-          "children": []
+          "children": [],
+          "disableBlockOptions": true
+
         },
         {
           "type": "advanced_text",
@@ -141,7 +149,30 @@
     {
       "type": "footer",
       "data": {
-        "value": {}
+        "value": {
+        }
+      },
+      "attributes": {},
+      "children": [],
+      "disableBlockOptions": true
+    },
+    {
+      "type": "loop",
+      "data": {
+        "value": {
+          "items": [1,2,3,4,5]
+        }
+      },
+      "attributes": {},
+      "children": [],
+      "disableBlockOptions": true
+    },
+    {
+      "type": "non_editable_text",
+      "data": {
+        "value": {
+          "text": "Some text"
+        }
       },
       "attributes": {},
       "children": [],
